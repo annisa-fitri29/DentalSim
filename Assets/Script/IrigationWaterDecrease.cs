@@ -7,10 +7,10 @@ public class IrigationDecreaseWater : MonoBehaviour
 {
     public AudioSource suction;
     public AudioClip clip;
-    [SerializeField] GameObject water;
-    [SerializeField] Vector3 startPosition;
-    [SerializeField] Vector3 endPosition;
-    [SerializeField] float speed = 1.0f;
+
+    // public GameObject bloodWater;
+    // public Transform suctionObj;
+    // public Transform newParent;
     void Start()
     {
         UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
@@ -21,13 +21,15 @@ public class IrigationDecreaseWater : MonoBehaviour
     // Update is called once per frame
     void DecreaseWater()
     {
-        //water.SetActive(true);
         suction.PlayOneShot(clip);
-        water.transform.position = Vector3.Lerp(startPosition, endPosition, speed * Time.deltaTime);
+        //bloodWater.transform.SetParent(suctionObj);
+        
     }
 
     public void StopAudio()
     {
         suction.Stop();
+        //bloodWater.transform.SetParent(newParent);
+
     }
 }

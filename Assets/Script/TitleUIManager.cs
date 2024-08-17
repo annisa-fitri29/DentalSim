@@ -11,6 +11,9 @@ public class TitleUIManager : MonoBehaviour
     [SerializeField] GameObject aboutText;
     [SerializeField] GameObject scoreUI;
     [SerializeField] GameObject scoreBtn;
+
+    [SerializeField] GameObject Timer;
+
     [SerializeField] TextMeshProUGUI backText;
 
     bool backIsOn;
@@ -29,6 +32,7 @@ public class TitleUIManager : MonoBehaviour
     {
         scoreUI.SetActive(true);
         scoreBtn.SetActive(false);
+        Timer.SetActive(false);
     }
     
     public void showAbout()
