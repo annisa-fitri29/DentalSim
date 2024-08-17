@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class IrigationIncreaseWater : MonoBehaviour
+public class IrigationDecreaseWater : MonoBehaviour
 {
     [SerializeField] GameObject water;
     [SerializeField] Vector3 startPosition;
@@ -12,14 +12,14 @@ public class IrigationIncreaseWater : MonoBehaviour
     void Start()
     {
         UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
-        grabInteractable.activated.AddListener(x => IncreaseWater());
+        grabInteractable.activated.AddListener(x => DecreaseWater());
 
     }
 
     // Update is called once per frame
-    void IncreaseWater()
+    void DecreaseWater()
     {
-        water.SetActive(true);
+        //water.SetActive(true);
         water.transform.position = Vector3.Lerp(startPosition, endPosition, speed * Time.deltaTime);
     }
     
