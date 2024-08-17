@@ -8,6 +8,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ActivateTrigger : MonoBehaviour
 {
     public ParticleSystem water;
+    [SerializeField] GameObject bloodWater;
+    [SerializeField] Vector3 startPosition;
+    [SerializeField] Vector3 endPosition;
+    [SerializeField] float speed = 10.0f;
     //public ParticleSystem blood;
 
     // Start is called before the first frame update
@@ -21,7 +25,10 @@ public class ActivateTrigger : MonoBehaviour
     // Update is called once per frame
     public void StartIrigation()
     {
+        bloodWater.SetActive(true);
+        bloodWater.transform.position = Vector3.Lerp(startPosition, endPosition, speed * Time.deltaTime);
         water.Play();
+        
     }
 
     public void StopIrigation()

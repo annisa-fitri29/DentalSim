@@ -9,6 +9,8 @@ public class TitleUIManager : MonoBehaviour
     [SerializeField] GameObject patientUI;
     [SerializeField] GameObject titleText;
     [SerializeField] GameObject aboutText;
+    [SerializeField] GameObject scoreUI;
+    [SerializeField] GameObject scoreBtn;
     [SerializeField] TextMeshProUGUI backText;
 
     bool backIsOn;
@@ -22,6 +24,11 @@ public class TitleUIManager : MonoBehaviour
     {
         menuUI.SetActive(false);
         patientUI.SetActive(true);
+    }
+    public void showFinalScore()
+    {
+        scoreUI.SetActive(true);
+        scoreBtn.SetActive(false);
     }
     
     public void showAbout()
