@@ -9,6 +9,9 @@ public class Kuretase : MonoBehaviour
     [SerializeField] GameObject jaringanRusak;
     public Transform curette;
     public Transform newParent;
+
+    public CheckProcedure checkProcedure;
+    public ChangeScore changeScore;
     void Start()
     {
         UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
@@ -18,6 +21,11 @@ public class Kuretase : MonoBehaviour
 
     public void StartFollowCurette()
     {
+        if(checkProcedure.curette == false)
+        {
+            changeScore.procedureSucceed();
+            checkProcedure.curette = true;
+        }
         jaringanRusak.transform.SetParent(curette);
     }
 

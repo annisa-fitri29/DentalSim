@@ -15,6 +15,9 @@ public class ActivateTrigger : MonoBehaviour
     public AudioSource irigasi;
     public AudioClip clip;
 
+    public CheckProcedure checkProcedure;
+    public ChangeScore changeScore;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +29,11 @@ public class ActivateTrigger : MonoBehaviour
     // Update is called once per frame
     public void StartIrigation()
     {
-        
+        if(checkProcedure.irigasi == false)
+        {
+            changeScore.procedureSucceed();
+            checkProcedure.irigasi = true;
+        }
         irigasi.PlayOneShot(clip);
         water.Play();
         blood.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);

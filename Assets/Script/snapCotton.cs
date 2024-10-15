@@ -4,36 +4,36 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 
-public class snapTooth : MonoBehaviour
+public class snapCotton : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject tooth;
-    public Transform tang;
+    public GameObject cotton;
+    public Transform tweezer;
     public Transform newParent;
     public ChangeScore changeScore;
     public CheckProcedure checkProcedure;
     void Start()
     {
         UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
-        grabInteractable.activated.AddListener(x => StartFollowTang());
-        grabInteractable.deactivated.AddListener(x => StopFollowTang());
+        grabInteractable.activated.AddListener(x => StartFollowTweezer());
+        grabInteractable.deactivated.AddListener(x => StopFollowTweezer());
     }
 
     // Update is called once per frame
-    public void StartFollowTang()
+    public void StartFollowTweezer()
     {
-        tooth.transform.SetParent(tang);
+        cotton.transform.SetParent(tweezer);
 
-        if(checkProcedure.tang == false)
+        if(checkProcedure.cotton == false)
         {
             changeScore.procedureSucceed();
-            checkProcedure.tang = true;
+            checkProcedure.cotton = true;
         }
     }
 
-    public void StopFollowTang()
+    public void StopFollowTweezer()
     {
-        tooth.transform.SetParent(newParent);
+        cotton.transform.SetParent(newParent);
     }
 
 }

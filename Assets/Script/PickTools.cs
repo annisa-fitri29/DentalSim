@@ -6,7 +6,8 @@ public class PickTools : MonoBehaviour
 {
     [SerializeField] GameObject[] disableTools;
     [SerializeField] GameObject[] enableModel;
-
+    public CheckProcedure checkProcedure;
+    public ChangeScore changeScore;
     public void donePicking()
     {
         for(int i = 0; i< disableTools.Length; i++)
@@ -19,7 +20,8 @@ public class PickTools : MonoBehaviour
             enableModel[i].SetActive(true);
         }
         
-
+        checkProcedure.tools = true;
+        changeScore.procedureSucceed();
 
     }
 }

@@ -15,6 +15,8 @@ public class TitleUIManager : MonoBehaviour
     [SerializeField] GameObject Timer;
 
     [SerializeField] TextMeshProUGUI backText;
+    TextMeshProUGUI scoreText;
+    public ChangeScore changeScore;
 
     bool backIsOn;
 
@@ -33,6 +35,7 @@ public class TitleUIManager : MonoBehaviour
         scoreUI.SetActive(true);
         scoreBtn.SetActive(false);
         Timer.SetActive(false);
+        scoreText.SetText("It is done! Let's see what's your score below<br> <br> Final Score: <br>" + changeScore.totalScore);
     }
     
     public void showAbout()

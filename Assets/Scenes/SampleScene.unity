@@ -521,6 +521,8 @@ MonoBehaviour:
   - {fileID: 2778084017451933870}
   enableModel:
   - {fileID: 1686219476356752888}
+  checkProcedure: {fileID: 279765276}
+  changeScore: {fileID: 466842103}
 --- !u!1001 &53847497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1643,7 +1645,7 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &272657263
+--- !u!1 &279765275
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1651,148 +1653,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 272657264}
-  - component: {fileID: 272657267}
-  - component: {fileID: 272657266}
-  - component: {fileID: 272657265}
-  m_Layer: 5
-  m_Name: Modal About Text
+  - component: {fileID: 279765277}
+  - component: {fileID: 279765276}
+  m_Layer: 0
+  m_Name: CheckProcedure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &272657264
-RectTransform:
+  m_IsActive: 1
+--- !u!114 &279765276
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272657263}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 279765275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a53dad8c2a64f4daf5aa8102ca7304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeScore: {fileID: 466842103}
+  bein: 0
+  tools: 0
+  tang: 0
+  irigasi: 0
+  curette: 0
+  cotton: 0
+--- !u!4 &279765277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279765275}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.962778, y: 0.7877108, z: 2.228455}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1840517011}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 150, y: -278}
-  m_SizeDelta: {x: 260, y: 58}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &272657265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272657263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 0
-  m_VerticalFit: 0
---- !u!114 &272657266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272657263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: This application simulate the procedure of dental extractions. The goal
-    is to finish the whole procedure following instructions and tasks. Goodluck!
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fbb7c6a04be6d8341934b839f24b42e1, type: 2}
-  m_sharedMaterial: {fileID: 4687939059374929122, guid: fbb7c6a04be6d8341934b839f24b42e1, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4293190884
-  m_fontColor: {r: 0.89411765, g: 0.89411765, b: 0.89411765, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 16
-  m_fontSizeBase: 16
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &272657267
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272657263}
-  m_CullTransparentMesh: 0
 --- !u!1001 &291773409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2557,6 +2460,8 @@ MonoBehaviour:
   jaringanRusak: {fileID: 533262587}
   curette: {fileID: 390359470}
   newParent: {fileID: 1598099388}
+  checkProcedure: {fileID: 0}
+  changeScore: {fileID: 0}
 --- !u!65 &390359474
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3992,6 +3897,51 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3032334164735723895, guid: 66d40221d132d04499855da9ce315f20, type: 3}
   m_PrefabInstance: {fileID: 1364055689}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &466842102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 466842104}
+  - component: {fileID: 466842103}
+  m_Layer: 0
+  m_Name: ScoreValue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &466842103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466842102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd163d488f9924c43a95c640fbd7fdb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalScore: 4
+--- !u!4 &466842104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466842102}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &488388312
 GameObject:
   m_ObjectHideFlags: 0
@@ -9527,6 +9477,8 @@ MonoBehaviour:
   newParent: {fileID: 1598099388}
   irigasi: {fileID: 608445950}
   clip: {fileID: 8300000, guid: 75d7ae97ba4484d4696ab17d3dabb41c, type: 3}
+  checkProcedure: {fileID: 279765276}
+  changeScore: {fileID: 466842103}
 --- !u!82 &608445950
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10018,6 +9970,10 @@ PrefabInstance:
     - target: {fileID: 3032334164735723897, guid: 66d40221d132d04499855da9ce315f20, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3032334164805062083, guid: 66d40221d132d04499855da9ce315f20, type: 3}
+      propertyPath: m_Name
+      value: Root
       objectReference: {fileID: 0}
     - target: {fileID: 3032334164805062089, guid: 66d40221d132d04499855da9ce315f20, type: 3}
       propertyPath: m_SizeDelta.y
@@ -13475,6 +13431,8 @@ MonoBehaviour:
   newParent: {fileID: 1598099388}
   irigasi: {fileID: 1312349996}
   clip: {fileID: 8300000, guid: 75d7ae97ba4484d4696ab17d3dabb41c, type: 3}
+  checkProcedure: {fileID: 0}
+  changeScore: {fileID: 0}
 --- !u!114 &1312349998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14945,6 +14903,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 466842103}
+        m_TargetAssemblyTypeName: ChangeScore, Assembly-CSharp
+        m_MethodName: wrongTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -15533,6 +15503,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1556524188}
         m_TargetAssemblyTypeName: ToolWarning, Assembly-CSharp
         m_MethodName: showWarning
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 466842103}
+        m_TargetAssemblyTypeName: ChangeScore, Assembly-CSharp
+        m_MethodName: wrongTool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22230,6 +22212,10 @@ PrefabInstance:
       value: 510.5
       objectReference: {fileID: 0}
     - target: {fileID: 73102262534702633, guid: 66d40221d132d04499855da9ce315f20, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 73102262534702633, guid: 66d40221d132d04499855da9ce315f20, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -22485,6 +22471,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3032334164805062083, guid: 66d40221d132d04499855da9ce315f20, type: 3}
+      propertyPath: m_Name
+      value: CardRoot
+      objectReference: {fileID: 0}
     - target: {fileID: 3032334164805062089, guid: 66d40221d132d04499855da9ce315f20, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -22511,13 +22501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3032334165326226692, guid: 66d40221d132d04499855da9ce315f20, type: 3}
       propertyPath: m_text
-      value: 'It''s done! you''re doing good. Keep up the good work!
-
-
-        Final
-        Score:
-
-        94'
+      value: nopee
       objectReference: {fileID: 0}
     - target: {fileID: 3032334165326226692, guid: 66d40221d132d04499855da9ce315f20, type: 3}
       propertyPath: m_fontSize
@@ -22533,7 +22517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3032334165326226695, guid: 66d40221d132d04499855da9ce315f20, type: 3}
       propertyPath: m_Name
-      value: Modal Welcome Text
+      value: Text
       objectReference: {fileID: 0}
     - target: {fileID: 3032334165368480682, guid: 66d40221d132d04499855da9ce315f20, type: 3}
       propertyPath: m_AnchorMax.y
@@ -22600,6 +22584,10 @@ PrefabInstance:
       value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 7158865763779469689, guid: 66d40221d132d04499855da9ce315f20, type: 3}
+      propertyPath: m_Name
+      value: Card Size
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158865763779469689, guid: 66d40221d132d04499855da9ce315f20, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -22651,6 +22639,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8893227839204258060, guid: 66d40221d132d04499855da9ce315f20, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8925207555904468295, guid: 66d40221d132d04499855da9ce315f20, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -22680,17 +22672,11 @@ PrefabInstance:
     - {fileID: 2451011294386125892, guid: 66d40221d132d04499855da9ce315f20, type: 3}
     - {fileID: 7752563439712129205, guid: 66d40221d132d04499855da9ce315f20, type: 3}
     - {fileID: 9176281889616400641, guid: 66d40221d132d04499855da9ce315f20, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 73102262534702633, guid: 66d40221d132d04499855da9ce315f20, type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 272657264}
+    - {fileID: 8893227839204258060, guid: 66d40221d132d04499855da9ce315f20, type: 3}
+    - {fileID: 3032334163513271980, guid: 66d40221d132d04499855da9ce315f20, type: 3}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66d40221d132d04499855da9ce315f20, type: 3}
---- !u!224 &1840517011 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 73102262534702633, guid: 66d40221d132d04499855da9ce315f20, type: 3}
-  m_PrefabInstance: {fileID: 1840517010}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1860386108
 GameObject:
   m_ObjectHideFlags: 0
@@ -24409,6 +24395,7 @@ MonoBehaviour:
   scoreBtn: {fileID: 1230243596}
   Timer: {fileID: 1928926272}
   backText: {fileID: 1300206164}
+  changeScore: {fileID: 0}
 --- !u!1 &2086599684
 GameObject:
   m_ObjectHideFlags: 0
@@ -26144,6 +26131,8 @@ MonoBehaviour:
   tooth: {fileID: 8223105932541739965}
   tang: {fileID: 543450653123354844}
   newParent: {fileID: 1598099388}
+  changeScore: {fileID: 466842103}
+  checkProcedure: {fileID: 279765276}
 --- !u!114 &919132148666956394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27105,7 +27094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &1691222776674461978
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -28099,7 +28088,7 @@ GameObject:
   - component: {fileID: 8580471495101861627}
   m_Layer: 0
   m_Name: Bein2
-  m_TagString: Untagged
+  m_TagString: Bein
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29567,7 +29556,7 @@ GameObject:
   - component: {fileID: 2599823900544765593}
   - component: {fileID: 7861524067244148004}
   m_Layer: 5
-  m_Name: PlayBtn
+  m_Name: DoneBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30038,7 +30027,7 @@ GameObject:
   - component: {fileID: 3032334165165506230}
   - component: {fileID: 3032334165165506225}
   m_Layer: 5
-  m_Name: CoachingCardRoot
+  m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30606,6 +30595,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 466842103}
+        m_TargetAssemblyTypeName: ChangeScore, Assembly-CSharp
+        m_MethodName: wrongTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -30734,6 +30735,8 @@ MonoBehaviour:
   tooth: {fileID: 414936824}
   tang: {fileID: 3298442650832206356}
   newParent: {fileID: 1598099388}
+  changeScore: {fileID: 0}
+  checkProcedure: {fileID: 0}
 --- !u!114 &3298442650832206360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32145,6 +32148,8 @@ MonoBehaviour:
   jaringanRusak: {fileID: 533262587}
   curette: {fileID: 3656736222844001518}
   newParent: {fileID: 1598099388}
+  checkProcedure: {fileID: 0}
+  changeScore: {fileID: 0}
 --- !u!4 &4180111706146557664
 Transform:
   m_ObjectHideFlags: 0
@@ -35217,8 +35222,8 @@ GameObject:
   - component: {fileID: 8820005842520920466}
   - component: {fileID: 8820005842520920465}
   - component: {fileID: 8820005842520920464}
-  - component: {fileID: 8820005842520920467}
   - component: {fileID: 8820005842520920468}
+  - component: {fileID: 8820005842520920469}
   m_Layer: 0
   m_Name: Dental Tweezer
   m_TagString: Untagged
@@ -37962,21 +37967,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08670697, y: 0.012912991, z: 0.00836839}
   m_Center: {x: 0.0074297525, y: 0.00009094304, z: -0.000009163392}
---- !u!114 &8820005842520920467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7018306850806034522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e01566e3d49f966498150297cbfe7532, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tooth: {fileID: 414936824}
-  tang: {fileID: 7651009154115152608}
-  newParent: {fileID: 1598099388}
 --- !u!114 &8820005842520920468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37993,6 +37983,23 @@ MonoBehaviour:
   duration: 40
   stopIntensity: 0
   stopDuration: 0
+--- !u!114 &8820005842520920469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7018306850806034522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d97310188e791ea488fbeb5e8fe16422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cotton: {fileID: 414936824}
+  tweezer: {fileID: 7651009154115152608}
+  newParent: {fileID: 1598099388}
+  changeScore: {fileID: 466842103}
+  checkProcedure: {fileID: 279765276}
 --- !u!114 &8845256486159989924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38465,6 +38472,8 @@ GameObject:
   - component: {fileID: 396620099198511386}
   - component: {fileID: 1154747307743913960}
   - component: {fileID: 4409614756301615770}
+  - component: {fileID: 9086441160758793631}
+  - component: {fileID: 9086441160758793630}
   m_Layer: 0
   m_Name: Retopo_mouth.001
   m_TagString: Untagged
@@ -38472,6 +38481,59 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9086441160758793630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9086441160758793629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4975296fe916cf40b0b1b531aef9620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnTriggerEnter: 0
+  tagFilter: Bein
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 279765276}
+        m_TargetAssemblyTypeName: CheckProcedure, Assembly-CSharp
+        m_MethodName: beinDone
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!135 &9086441160758793631
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9086441160758793629}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.0009370457
+  m_Center: {x: 0.000034137684, y: 0.000083319195, z: -0.000061147555}
 --- !u!1 &9126616552764078633
 GameObject:
   m_ObjectHideFlags: 0
@@ -38608,3 +38670,5 @@ SceneRoots:
   - {fileID: 224677175}
   - {fileID: 527745112}
   - {fileID: 1598099388}
+  - {fileID: 466842104}
+  - {fileID: 279765277}
