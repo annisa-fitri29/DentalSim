@@ -35,7 +35,23 @@ public class TitleUIManager : MonoBehaviour
         scoreUI.SetActive(true);
         scoreBtn.SetActive(false);
         Timer.SetActive(false);
-        scoreText.SetText("It is done! Let's see what's your score below<br> <br> Final Score: <br>" + changeScore.totalScore);
+
+        if(changeScore.totalScore < 51)
+        {
+            scoreText.SetText("Try again! You can do it!<br> <br> Final Score: <br>" + changeScore.totalScore);
+        }
+        else if(changeScore.totalScore<70 && changeScore.totalScore>50)
+        {
+            scoreText.SetText("You are improving! Try again!<br> <br> Final Score: <br>" + changeScore.totalScore);
+        }
+        else if(changeScore.totalScore<86 && changeScore.totalScore>69)
+        {
+            scoreText.SetText("Nice! You will do greatly with more training!<br> <br> Final Score: <br>" + changeScore.totalScore);
+        } 
+        else if(changeScore.totalScore>85)
+        {
+            scoreText.SetText("Excelent work there! Nicely done<br> <br> Final Score: <br>" + changeScore.totalScore);
+        }
     }
     
     public void showAbout()

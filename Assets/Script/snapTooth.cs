@@ -11,6 +11,7 @@ public class snapTooth : MonoBehaviour
     public Transform tang;
     public Transform newParent;
     public ChangeScore changeScore;
+    public beinSkipped beinSkipped;
     public CheckProcedure checkProcedure;
     void Start()
     {
@@ -24,11 +25,21 @@ public class snapTooth : MonoBehaviour
     {
         tooth.transform.SetParent(tang);
 
-        if(checkProcedure.tang == false)
+        if(checkProcedure.bein == true)
         {
-            changeScore.procedureSucceed();
-            checkProcedure.tang = true;
+            if(checkProcedure.tang == false)
+            {
+                changeScore.procedureSucceed();
+                checkProcedure.tang = true;
+            }
         }
+
+        else if(checkProcedure.bein == false)
+        {
+            beinSkipped.beinIsSkipped();
+        }
+
+
     }
 
     public void StopFollowTang()
